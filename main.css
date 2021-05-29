@@ -1,0 +1,44 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#mainSection {
+  background: url("Images/first_screen_tower.svg") no-repeat right top, linear-gradient(135deg, #15192E 75%, #EA970A 25%);
+  color: white;
+}
+.header{
+
+}
+#firstScreen{
+  left: 0px;
+  top: 0px;
+}
+.nav-link{
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+.nav-link:hover{
+  color: #EA0A0A;
+}
+#firstScreen{
+
+}
+.phone{
+  font-size: 15px;
+  line-height: 18px;
+}
+h1{
+  margin-left: 5em;
+  margin-top: 6em;
+  text-align: left;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 56.35px;
+}
+.col{
+  padding: 0px;
+}
