@@ -23,7 +23,7 @@ commonBeOurWorker.addEventListener('submit', e => {
 questionnaire.addEventListener('submit', e => {
 	e.preventDefault()
 	$('#modal-thanks').modal('show');
-
+	console.log(new FormData(form))
 	fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 		.then(response => console.log('Success!', response))
 		.catch(error => console.error('Error!', error.message))
