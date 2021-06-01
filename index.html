@@ -455,22 +455,22 @@
         Задай свой вопрос здесь
         </h4>
         <p class="postHeader">Остались вопросы?</p>
-        <form>
+        <form id="Questionnaire">
           <div class="form-group">
             <label for="formGroupExampleInput">Имя</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Вадим">
+            <input type="text" name="Name" class="form-control" id="formGroupExampleInput" placeholder="Вадим">
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Телефон</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="+1 215 497 8442">
+            <input type="text" name="Phone" class="form-control" id="formGroupExampleInput2" placeholder="+1 215 497 8442">
           </div>
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Содержание вопроса</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" name="Question"  id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <a href="#" class="def-button main-screen-button item-button" style="width:100%">
+          <button href="#" class="def-button main-screen-button item-button" style="width:100%" type="submit">
             Отправить вопрос
-          </a>
+          </button>
       </form>
       </div>
     </div>

@@ -6,7 +6,17 @@ window.onload = function() {
 };
 let scriptURL = 'https://script.google.com/macros/s/AKfycbyR49mXTZzEEqmmwRviRk_eDKMDq1-Z1vk5cpFcT42pVxfsJBGmBxMqx3E0_rHD_oIsMQ/exec';
 let form = document.getElementById("PizdaJigurda");
+let questionnaire = document.getElementById("Questionnaire");
 
+
+questionnaire.addEventListener('submit', e => {
+	e.preventDefault()
+	$('#modal-thanks').modal('show');
+
+	fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		.then(response => console.log('Success!', response))
+		.catch(error => console.error('Error!', error.message))
+})
 
 form.addEventListener('submit', e => {
 	e.preventDefault()
@@ -17,6 +27,7 @@ form.addEventListener('submit', e => {
 		.then(response => console.log('Success!', response))
 		.catch(error => console.error('Error!', error.message))
 })
+
 
 $(document).ready(function () {
             $('.collapse')
