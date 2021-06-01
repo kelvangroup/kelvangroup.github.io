@@ -15,24 +15,25 @@
 </head>
 <body>
 <section id="mainSection">
+  <div class="container">
   <div id="header">
 
         <nav class="navbar navbar-expand-sm navbar-dark">
-          <a class="navbar-brand ml-auto" href="#" >
+          <a class="navbar-brand" href="#" >
             <img src="Images/logo.svg" width="127.27px" height="86px" alt="">
           </a>
           <ul class="navbar-nav mx-auto order-0">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">О нас<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">О вас</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">Отзывы</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link" href="#">Вопрос-ответ</a>
               </li>
           </ul>
           <a class="navbar-brand mr-auto phone" href="#" >
@@ -42,30 +43,205 @@
   </div>
 
 
-<div id="firstScreen">
+  <div id="firstScreen">
   <div class="d-flex">
-      <div class="d-flex">
+      <div class="d-flex flex-column ">
         <h1>
-          Работа для<br>
-    настоящих мужчин
+          Работа для<br>настоящих мужчин
         </h1>
-      </div>
-      <div class="d-flex">
-
+        <h2 class="secheader">
+          Ищем русскоязычного специалиста для работы<br>на вышках телекоммуникации в США<br>с зарплатой от 200 $ в день
+        </h2>
+        <a href="#" class="def-button main-screen-button">
+          Оставить заявку
+        </a>
       </div>
   </div>
+  <div class="social d-flex justify-content-end">
+    <a href="https://www.instagram.com/kelvangroup/">
+      <img src="Images/inst.svg" width="22px" height="22px" alt="">
+    </a>
+  </div>
+  <hr align="center" width="100%" size="2" />
+  <div class="mini-advantages d-flex flex-row justify-content-start">
+    <p>Вахтовый метод</p>
+    <p class="item-mini-advantages">Высокая зарплата</p>
+    <p class="item-mini-advantages">Карьерный рост</p>
+  </div>
 </div>
-
+  </div>
 </section>
-<section id="advantages"></section>
-<section id="aboutUs"></section>
-<section id="aboutYou"></section>
+
+<section id="advantages">
+  <div class="d-flex justify-content-center container">
+    <div class="advantages-item ">
+      <img class="d-block mx-auto" src="Images/vaxt.svg" alt="">
+      <h4 class="text-center">Вахтовый метод</h4>
+      <p class="text-center">Четыре недели в командировке с одним<br> еженедельным выходным с последующим<br> отдыхом дома в течение 5-10 дней</p>
+    </div>
+    <div class="advantages-item">
+      <img class="d-block mx-auto" src="Images/HighSalary.svg" alt="">
+      <h4 class="text-center">Высокая зарплата</h4>
+      <p class="text-center">Мы предлагаем заработную плату от 200<br> долларов в день и возможность ее увеличения в<br> соответствии с ростом вашей компетентности</p>
+    </div>
+    <div class="advantages-item">
+      <img class="d-block mx-auto" src="Images/vaxt.svg" alt="">
+      <h4 class="text-center">Карьерный рост</h4>
+      <p class="text-center">При наличии опыта, подтвержденного <br>соответствующими сертификатами, вы сможете<br> стать руководителем группы, бригады</p>
+    </div>
+  </div>
+</section>
+
+<section id="aboutUs">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <button type="button" id="play_button" name="button">
+
+        </button>
+        <p id="preVideoText">Смотреть видео процесса работы 2 мин.</p>
+            <video width="540" height="410" id="videoPlayer" >
+              <source src="Video/timelapse.mp4" type="video/mp4">
+            </video>
+       </div>
+      <div class="col">
+        <h3 class="OnasHeader">
+          О нас
+        </h3>
+        <p class="postHeader">
+          Чем мы занимаемся?
+        </p>
+        <p>
+          Компания KelvanGroup работает в сфере установки и монтажа телекоммуникационного оборудования на высоте уже 5 лет.
+ Наша компания имеет стабильную репутацию и сотрудничает с ведущими лидерами рынка США.<br><br>
+
+    Процесс монтажа оборудования производится с использованием современной техники.  Для обеспечения безопасности сотрудников применяется оборудование для альпинизма.<br><br>
+
+    Объекты расположены по всей территории США, поэтому работа осуществляется вахтовым  методом. Компания создает максимально комфортные условия для пребывания в командировках для своих сотрудников.
+            </p>
+          </div>
+        </div>
+      </div>
+</section>
+<section id="aboutYou">
+ <div class="container">
+   <div class="section-header text-left">
+     <h3 class="OnasHeader">
+       О вас
+     </h3>
+     <p class="postHeader">
+       Кого мы ищем?
+     </p>
+   </div>
+  <div class="cards ">
+    <div class="row d-flex justify-content-around">
+      <div class="col-4">
+        <div class="card border-light">
+          <div class="card-header">
+            <h5 class="card-title mt-2 text-center">Новичок</h5>
+            <p class="card-subtitle mb-2 text-center">
+              от
+              <span class="priceText">200 $</span>
+               в день
+            </p>
+          </div>
+          <div class="card-body border-bottom border-warning">
+            Отсутствие страха высоты
+          </div>
+          <div class="card-body border-bottom border-warning">
+            Умение выполнять простые инструкции
+          </div>
+          <div class="card-body border-bottom border-warning">
+            Оказание помощи при сборке оборудования
+          </div>
+          <div class="card-body border-bottom border-warning">
+            Наличие Driver License
+          </div>
+          <div class="card-body">
+            Знание английского будет плюсом
+          </div>
+          <div class="card-body cardPartButton text-center">
+            <a href="#" class="def-button main-screen-button item-button">
+              Это про меня
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-4">
+        <div class="card border-light">
+          <div class="card-header">
+            <h5 class="card-title mt-2 text-center">Мастер</h5>
+            <p class="card-subtitle mb-2 text-center">
+              от
+              <span class="priceText">300 $</span>
+               в день
+            </p>
+          </div>
+          <div class="card-body border-bottom border-warning">
+            Опыт работы на вышке
+          </div>
+          <div class="card-body border-bottom border-warning">
+            Умение работать соблюдая Safety concerns
+          </div>
+          <div class="card-body border-bottom border-warning">
+            OSHA10, BBP, Capstan Hoist Operator, CRP
+          </div>
+          <div class="card-body border-bottom border-warning">
+            Опыт работы на AT&T или T-mobile
+          </div>
+          <div class="card-body">
+            Наличие TTT1 будет плюсом
+          </div>
+          <div class="card-body cardPartButton text-center">
+            <a href="#" class="def-button main-screen-button item-button">
+              Это про меня
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card border-light">
+          <div class="card-header">
+            <h5 class="card-title mt-2 text-center">Профессионал</h5>
+            <p class="card-subtitle mb-2 text-center">
+              от
+              <span class="priceText">400 $</span>
+               в день
+            </p>
+          </div>
+          <div class="card-body border-bottom border-warning">
+            Знание всех аспектов работы при строительстве, улучшении, демонтажа оборудования вышки
+          </div>
+          <div class="card-body border-bottom border-warning">
+            Наличие сертификатов OSHA30, BBP, CRP
+          </div>
+          <div class="card-body border-bottom border-warning">
+            Наличие TTT1, TTT2 будет плюсом
+          </div>
+          <div class="card-body border-bottom border-warning">
+            Умение делать работу, соблюдая правила маркетов
+          </div>
+          <div class="card-body">
+            Знание английского будет плюсом
+          </div>
+          <div class="card-body cardPartButton text-center">
+            <a href="#" class="def-button main-screen-button item-button">
+              Это про меня
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</section>
 <section id="cta"></section>
 <section id="review"></section>
 <section id="QA"></section>
 <section id="footer"></section>
 
-
+<script src="myscripts.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

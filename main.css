@@ -7,8 +7,8 @@ body {
   background: url("Images/first_screen_tower.svg") no-repeat right top, linear-gradient(135deg, #15192E 75%, #EA970A 25%);
   color: white;
 }
-.header{
-
+.nav-item{
+  margin-left: 1em;
 }
 #firstScreen{
   left: 0px;
@@ -31,14 +31,152 @@ body {
   line-height: 18px;
 }
 h1{
-  margin-left: 5em;
-  margin-top: 6em;
+  margin-top: 2em;
   text-align: left;
   font-weight: 700;
   font-style: normal;
   font-size: 48px;
   line-height: 56.35px;
 }
+.secheader{
+  margin-top: 1em;
+  text-align: left;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+.def-button{
+    background-color: #EA0A0A;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+    border: none;
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 240px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.def-button:hover{
+  text-decoration: none;
+  background-color: #d40808;
+  color: white;
+}
+.def-button:active{
+  background-color: #EA0A0A;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+.main-screen-button{
+  margin-top: 2em;
+}
+hr{
+  margin-top: 8em;
+  border: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #EA970A  73%, #C1C1C1 27%);
+}
+.item-mini-advantages{
+  margin-left: 4em;
+}
+.mini-advantages{
+}
 .col{
   padding: 0px;
+}
+#advantages{
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.social{
+  margin-right: 16em;
+}
+.advantages-item{
+
+}
+.advantages-item-img{
+  margin: 0 auto;
+  align: center;
+}
+#videoPlayer{
+  z-index: 09;
+}
+#play_button{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  height: 100px;
+  width: 100px;
+  z-index: 900;
+  background-repeat: no-repeat;
+  background: url("Images/Play_button.svg");
+  background-size: contain;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+#preVideoText{
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 18px;
+  color: white;
+}
+.postHeader{
+  color: #EA970A;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 18px;
+}
+.OnasHeader{
+  font-weight: 700;
+  font-size: 34px;
+}
+#aboutUs{
+  margin-bottom: 2em;
+}
+#aboutYou{
+  margin-bottom: 2em;
+}
+.card-title{
+  font-weight: 700;
+  font-size: 22px;
+  align: center;
+  color: white;
+}
+.card-subtitle{
+  font-weight: bold;
+  font-size: 18px;
+  align: center;
+  color: #EA970A;
+
+}
+.priceText{
+  font-weight: 700;
+  font-size: 44px;
+  align: center;
+  color: #EA970A;
+}
+.card-header{
+  background: #15192E;
+}
+.card-body{
+  font-weight: normal;
+  font-size: 15px;
+  border-color: black;
+}
+.card{
+  box-shadow: 0px 8px 9px -3px rgba(0,0,0,0.36);
+}
+.item-button{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.cardPartButton{
+  padding-top: 0;
+  padding-bottom: 0;
 }
