@@ -527,26 +527,28 @@
       <div class="modal-body text-center">
         <h5 class="modal-title reviewHeader" id="exampleModalLabel">Заполните форму</h5>
         <p class="postHeader">Мы перезвоним Вам, чтобы уточнить детали</p>
-        <form>
+        <form name="submit-to-google-sheet" id="PizdaJigurda">
           <div class="form-group text-left text-modal-from">
             <label for="formGroupExampleInput">Ваше имя</label>
-            <input type="text" class="form-control border-top-0 border-left-0 border-right-0" id="formGroupExampleInput" placeholder="Евгений">
+            <input name="Name" type="text" class="form-control border-top-0 border-left-0 border-right-0" id="formGroupExampleInput" placeholder="Евгений">
           </div>
           <div class="form-group text-left text-modal-from">
             <label for="formGroupExampleInput2">Ваш телефон</label>
-            <input type="text" class="form-control border border-top-0 border-left-0 border-right-0" id="formGroupExampleInput2" placeholder="+1 215 497 8442">
+            <input name="Phone" type="text" class="form-control border border-top-0 border-left-0 border-right-0" id="formGroupExampleInput2" placeholder="+1 215 497 8442">
           </div>
-
+          <div class="modal-footer d-flex justify-content-center">
+            <button href="#" class="def-button main-screen-button item-button"  type="submit">
+              Отправить
+            </button>
+          </div>
       </form>
       </div>
-      <div class="modal-footer d-flex justify-content-center">
-        <a href="#" class="def-button main-screen-button item-button" data-toggle="modal" data-target="#modal-thanks" data-dismiss="modal">
-          Отправить
-        </a>
-      </div>
+
     </div>
   </div>
 </div>
+
+
 
 <!-- Modal Thanks -->
 <div class="modal fade" id="modal-thanks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -564,6 +566,19 @@
      </div>
 </div>
 
+<script>
+  let scriptURL = '<https://script.google.com/macros/s/AKfycbyR49mXTZzEEqmmwRviRk_eDKMDq1-Z1vk5cpFcT42pVxfsJBGmBxMqx3E0_rHD_oIsMQ/exec>'
+  let form = document.getElementById("PizdaJigurda")
+
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="myscripts.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
