@@ -263,3 +263,9 @@ hr{
 #footer{
     background: linear-gradient(135deg, #15192E 50%, #EA970A 50%);
 }
+.text-modal-from{
+  color: rgba(61, 61, 61, 0.3);
+}
+.modal-thanks-body{
+  height: 300px;
+}
