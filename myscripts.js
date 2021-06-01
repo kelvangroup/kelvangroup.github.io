@@ -4,6 +4,19 @@ var myText = document.getElementById("preVideoText");;
 window.onload = function() {
 	video = document.getElementById("videoPlayer");
 };
+let scriptURL = '<https://script.google.com/macros/s/AKfycbyR49mXTZzEEqmmwRviRk_eDKMDq1-Z1vk5cpFcT42pVxfsJBGmBxMqx3E0_rHD_oIsMQ/exec>';
+let form = document.getElementById("PizdaJigurda");
+
+
+form.addEventListener('submit', e => {
+	e.preventDefault()
+	$('#exampleModal').modal('hide');
+	$('#modal-thanks').modal('show');
+
+	fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		.then(response => console.log('Success!', response))
+		.catch(error => console.error('Error!', error.message))
+})
 
 $(document).ready(function () {
             $('.collapse')
