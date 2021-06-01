@@ -4,7 +4,7 @@ var myText = document.getElementById("preVideoText");;
 window.onload = function() {
 	video = document.getElementById("videoPlayer");
 };
-let scriptURL = '<https://script.google.com/macros/s/AKfycbyR49mXTZzEEqmmwRviRk_eDKMDq1-Z1vk5cpFcT42pVxfsJBGmBxMqx3E0_rHD_oIsMQ/exec>';
+let scriptURL = 'https://script.google.com/macros/s/AKfycbyR49mXTZzEEqmmwRviRk_eDKMDq1-Z1vk5cpFcT42pVxfsJBGmBxMqx3E0_rHD_oIsMQ/exec';
 let form = document.getElementById("PizdaJigurda");
 
 
