@@ -7,6 +7,17 @@ window.onload = function() {
 let scriptURL = 'https://script.google.com/macros/s/AKfycbyR49mXTZzEEqmmwRviRk_eDKMDq1-Z1vk5cpFcT42pVxfsJBGmBxMqx3E0_rHD_oIsMQ/exec';
 let form = document.getElementById("PizdaJigurda");
 let questionnaire = document.getElementById("Questionnaire");
+let commonBeOurWorker = document.getElementById("commonBeOurWorker");
+
+
+commonBeOurWorker.addEventListener('submit', e => {
+	e.preventDefault()
+	$('#modal-thanks').modal('show');
+
+	fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		.then(response => console.log('Success!', response))
+		.catch(error => console.error('Error!', error.message))
+})
 
 
 questionnaire.addEventListener('submit', e => {

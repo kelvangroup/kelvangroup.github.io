@@ -241,8 +241,7 @@
   <div class="container">
     <h4 class="text-center ctaHeader">Станьте нашим сотрудником</h4>
     <p class="postHeader text-center">Мы перезвоним Вам, чтобы уточнить детали</p>
-    <form action="https://script.google.com/macros/s/AKfycbw2VkFnBJsxbNW7QtC1a5QJVBjCIwwersVZVS1-/exec"
-               method="post" target="dummyframe" class="gform" data-email="marbel96@yandex.ru">
+    <form id="commonBeOurWorker">
                <div class="row d-flex justify-content-around">
                  <div class="col-4">
                     <input name="name" type="text" class="form-control" id="name" placeholder="Ваше имя" required>
@@ -251,7 +250,7 @@
                     <input name="phone" type="tel" class="form-control" id="email" placeholder="Ваш телефон" required>
                   </div>
                   <div class="col-3">
-                    <input name="submit" type="submit" class="form-control" id="submit" value="Отправить" onclick="">
+                    <input name="submit" type="submit" class="form-control" id="submit" value="Отправить">
                   </div>
               </div>
   </form>
@@ -458,11 +457,11 @@
         <form id="Questionnaire">
           <div class="form-group">
             <label for="formGroupExampleInput">Имя</label>
-            <input type="text" name="Name" class="form-control" id="formGroupExampleInput" placeholder="Вадим">
+            <input required type="text" name="Name" class="form-control" id="formGroupExampleInput" placeholder="Вадим">
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Телефон</label>
-            <input type="text" name="Phone" class="form-control" id="formGroupExampleInput2" placeholder="+1 215 497 8442">
+            <input required type="text" name="Phone" class="form-control" id="formGroupExampleInput2" placeholder="+1 215 497 8442">
           </div>
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Содержание вопроса</label>
@@ -530,11 +529,11 @@
         <form name="submit-to-google-sheet" id="PizdaJigurda">
           <div class="form-group text-left text-modal-from">
             <label for="formGroupExampleInput">Ваше имя</label>
-            <input name="Name" type="text" class="form-control border-top-0 border-left-0 border-right-0" id="formGroupExampleInput" placeholder="Евгений">
+            <input required name="Name" type="text" class="form-control border-top-0 border-left-0 border-right-0" id="formGroupExampleInput" placeholder="Евгений">
           </div>
           <div class="form-group text-left text-modal-from">
             <label for="formGroupExampleInput2">Ваш телефон</label>
-            <input name="Phone" type="text" class="form-control border border-top-0 border-left-0 border-right-0" id="formGroupExampleInput2" placeholder="+1 215 497 8442">
+            <input required name="Phone" type="text" class="form-control border border-top-0 border-left-0 border-right-0" id="formGroupExampleInput2" placeholder="+1 215 497 8442">
           </div>
           <div class="modal-footer d-flex justify-content-center">
             <button href="#" class="def-button main-screen-button item-button"  type="submit">
