@@ -180,3 +180,86 @@ hr{
   padding-top: 0;
   padding-bottom: 0;
 }
+#cta{
+  background: linear-gradient(55deg, #15192E 75%, #EA970A 25%);
+  color: white;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.ctaHeader{
+  font-weight: 400;
+  font-size: 34px;
+}
+.gform{
+  margin-top: 3em;
+}
+#submit{
+  background: red;
+  color: white;
+  border-radius: 0px;
+  border: none;
+  height: 60px;
+}
+#email{
+  height: 60px;
+  border-radius: 0px;
+}
+#name{
+  height: 60px;
+  border-radius: 0px;
+}
+
+
+#review{
+  background: url("Images/towerQA.svg") no-repeat center, linear-gradient(90deg, #E2E2E2 50%, #FFFFFF 50%);
+
+}
+#QA{
+  background: url("Images/towerQA.svg") no-repeat center, linear-gradient(90deg, #FFFFFF  50%, #E2E2E2 50%);
+
+}
+.reviewHeader{
+  font-weight: 700;
+  font-size: 34px;
+  margin-top: 2em;
+}
+.leftReview{}
+.carousel .carousel-indicators li {
+  background-color: #fff;
+  background-color: rgba(70, 70, 70, 0.25);
+}
+
+.carousel .carousel-indicators .active {
+  background-color: #EA970A;
+}
+.carousel-indicators{
+  bottom: -40px;
+}
+.fullLine{
+    margin-top: 0;
+    border: 0;
+    height: 2px;
+    background: #EA970A;
+}
+.urQuestHed{
+  margin-left: 1em;
+}
+.rightQA{
+  margin-left: 5em;
+  padding-bottom: 2em;
+}
+
+
+
+.collapseButton{
+  border: none;
+  text-align:center;
+  vertical-align:middle;
+  height: 16px;
+}
+.wrapper{
+  margin-left: 1em;
+}
+#footer{
+    background: linear-gradient(135deg, #15192E 50%, #EA970A 50%);
+}

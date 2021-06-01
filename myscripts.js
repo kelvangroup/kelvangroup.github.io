@@ -1,10 +1,30 @@
 var playButton = document.getElementById("play_button");
 var video;
 var myText = document.getElementById("preVideoText");;
-
 window.onload = function() {
 	video = document.getElementById("videoPlayer");
 };
+
+$(document).ready(function () {
+            $('.collapse')
+                .on('shown.bs.collapse', function() {
+                    $(this)
+                        .parent()
+                        .find(".fa-chevron-down")
+                        .removeClass("fa-chevron-down")
+                        .addClass("fa-chevron-up");
+                })
+                .on('hidden.bs.collapse', function() {
+                    $(this)
+                        .parent()
+                        .find(".fa-chevron-up")
+                        .removeClass("fa-chevron-up")
+                        .addClass("fa-chevron-down");
+                });
+        });
+
+
+
 playButton.addEventListener("click", function() {
   if (video.paused == true) {
     // Play the video
