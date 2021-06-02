@@ -343,15 +343,13 @@ hr{
   flex-direction: column;
 }
 #videoPlayer{
-
     z-index: 09;
     width: 100%;
     margin: 0 auto;
-
 }
 #preVideoText{
-  top: 60%;
-  left: 15%;
+  top: 50%;
+  left: 10%;
 }
 .OnasHeader{
   text-align: center;
@@ -453,10 +451,19 @@ p{
   .mini-advantages{
     text-shadow: 2px 2px 4px #000000;
   }
+  #preVideoText{
+    left: 27%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) {
+  #videoPlayer{
+      z-index: 09;
+      width: 100%;
+      margin: 0 auto;
+  }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {...}
