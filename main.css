@@ -410,25 +410,28 @@ p{
 #footer ul li:nth-child(3){
   text-align: center;
 }
-.footer-button{
-  margin-left: 4em;
+.phone{
+  display: flex;
+  justify-content: center;
 }
+
 .phoneAndButton{
-  margin-right: 0 !important;
-}
-#footer .phone{
-  margin-left: 7em;
+  margin: auto !important;
 }
 .expandText{
-  font-size: 14px;
+  font-size: 13px;
 }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 601px) and (max-width: 767) {
+@media only screen and (min-width: 600px) {
 .navbar{
+  color: red;
     display: flex;
     flex-direction: column;
+  }
+  .expandText{
+    font-size: 15px;
   }
 }
 
