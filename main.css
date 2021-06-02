@@ -424,14 +424,34 @@ p{
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-device-width: 768px) {
 .navbar{
   color: red;
     display: flex;
     flex-direction: column;
+    justify-content: space-between !important;
   }
   .expandText{
     font-size: 15px;
+  }
+  #header .phone{
+    align-content: center;
+    margin: auto;
+  }
+  .social{
+    display: none !important;
+  }
+  #header .a{
+    text-shadow: 2px 6px 4px #000000;
+  }
+  h1{
+    text-shadow: 2px 6px 4px #000000;
+  }
+  .secheader{
+    text-shadow: 2px 6px 4px #000000;
+  }
+  .mini-advantages{
+    text-shadow: 2px 2px 4px #000000;
   }
 }
 
