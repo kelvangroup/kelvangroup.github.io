@@ -29,6 +29,7 @@ body {
 .phone{
   font-size: 15px;
   line-height: 18px;
+  margin-right: auto;
 }
 h1{
   margin-top: 2em;
@@ -72,6 +73,9 @@ h1{
 .main-screen-button{
   margin-top: 2em;
 }
+.thisIsForMeButton{
+  width: 100%;
+}
 hr{
   margin-top: 8em;
   border: 0;
@@ -102,6 +106,8 @@ hr{
 }
 #videoPlayer{
   z-index: 09;
+  width: 540px;
+  height: 410px;
 }
 #play_button{
   position: absolute;
@@ -193,7 +199,7 @@ hr{
 .gform{
   margin-top: 3em;
 }
-#submit{
+#submitInput{
   background: red;
   color: white;
   border-radius: 0px;
@@ -245,7 +251,6 @@ hr{
   margin-left: 1em;
 }
 .rightQA{
-  margin-left: 5em;
   padding-bottom: 2em;
 }
 
@@ -277,3 +282,161 @@ hr{
 #formGroupExampleInput3{
   height: 100px;
 }
+.footer-button{
+  background: none;
+  border: 2px solid #d40808;;
+  margin-left: 1em;
+}
+
+.copyrightText{
+  margin-bottom: 0;
+  margin-left: 2em;
+  margin-right: 2em;
+  white-space:nowrap;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+#header .navbar ul {
+  display: none;
+}
+
+.phone{
+  margin-right: 0;
+  margin-top: 1em;
+}
+#firstScreen h1{
+  color:#EA970A;
+  margin-top: 1em;
+}
+.navbar{
+  display: flex;
+  flex-direction: column;
+}
+.secheader{
+  background:  #EA970A;
+  padding: 3px;
+  text-align: center !important;
+}
+.main-screen-button{
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.social{
+  display: none !important;
+}
+#firstScreen hr{
+  margin-top: 1em;
+}
+
+#mainSection{
+  background: url("Images/first_screen_tower.svg") no-repeat, linear-gradient(135deg, #15192E 75%, #EA970A 25%);
+}
+.mini-advantages{
+  display: none !important;
+}
+#advantages{
+  margin-bottom: 0px;
+}
+#advantages div{
+  flex-direction: column;
+}
+#videoPlayer{
+
+    z-index: 09;
+    width: 100%;
+    margin: 0 auto;
+
+}
+#preVideoText{
+  top: 60%;
+  left: 15%;
+}
+.OnasHeader{
+  text-align: center;
+}
+.postHeader{
+  text-align: center;
+}
+p{
+  text-align: center;
+  padding: 1em;
+}
+#aboutUs{
+  margin-bottom: 0px;
+}
+.postHeader{
+  padding-top: 0;
+}
+.formcommonBeOurWorkerItem{
+  padding: 1em;
+}
+#cta{
+  background: linear-gradient(135deg, #15192E 75%, #EA970A 25%);
+}
+.reviewHeader{
+  text-align: center;
+}
+.leftReview .postHeader{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#review{
+  background: white;
+}
+
+#QA{
+  background: white;
+}
+.question-button{
+  width: 90% !important;
+  margin: 0 auto;
+  text-align:center;
+  display: flex;
+  justify-content: center;
+}
+.card{
+  margin-bottom: 1em;
+}
+#QA .row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#footer ul li:nth-child(2){
+  text-align: center;
+  order: 4;
+}
+#footer ul li:nth-child(3){
+  text-align: center;
+}
+.footer-button{
+  margin-left: 4em;
+}
+.phoneAndButton{
+  margin-right: 0 !important;
+}
+#footer .phone{
+  margin-left: 7em;
+}
+.expandText{
+  font-size: 14px;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 767) {
+.navbar{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}

@@ -21,7 +21,7 @@
 
         <nav class="navbar navbar-expand-sm navbar-dark">
           <a class="navbar-brand" href="#" >
-            <img src="Images/logo.svg" width="127.27px" height="86px" alt="">
+            <img src="Images/logo.svg" width="127.27px" height="86px" alt="" id="logoImg">
           </a>
           <ul class="navbar-nav mx-auto order-0">
               <li class="nav-item active">
@@ -37,8 +37,8 @@
                 <a class="nav-link" href="#QA">Вопрос-ответ</a>
               </li>
           </ul>
-          <a class="navbar-brand mr-auto phone" href="#" >
-            <img src="Images/Phone.svg" width="16px" height="16px" alt="">  1 - 267 - 401 - 098
+          <a class="navbar-brand  phone" href="#" >
+            <img src="Images/Phone.svg" width="16px" height="16px" alt="" id="phoneImg">  1 - 267 - 401 - 098
           </a>
         </nav>
   </div>
@@ -51,14 +51,14 @@
           Работа для<br>настоящих мужчин
         </h1>
         <h2 class="secheader">
-          Ищем русскоязычного специалиста для работы<br>на вышках телекоммуникации в США<br>с зарплатой от 200 $ в день
+          Ищем русскоязычного специалиста для работы<br  class="d-none d-sm-block"> на вышках телекоммуникации в США<br class="d-none d-sm-block"> с зарплатой от 200 $ в день
         </h2>
         <a href="#" class="def-button main-screen-button" data-toggle="modal" data-target="#exampleModal">
           Оставить заявку
         </a>
       </div>
   </div>
-  <div class="social d-flex justify-content-end">
+  <div class="social d-flex justify-content-end ">
     <a href="https://www.instagram.com/kelvangroup/">
       <img src="Images/inst.svg" width="22px" height="22px" alt="">
     </a>
@@ -96,23 +96,23 @@
 <section id="aboutUs">
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col-12 col-lg-6 ">
         <button type="button" id="play_button" name="button">
 
         </button>
         <p id="preVideoText">Смотреть видео процесса работы 2 мин.</p>
-            <video width="540" height="410" id="videoPlayer" >
+            <video id="videoPlayer" >
               <source src="Video/timelapse.mp4" type="video/mp4">
             </video>
        </div>
-      <div class="col">
+      <div class="col-12 col-lg-6 ">
         <h3 class="OnasHeader">
           О нас
         </h3>
         <p class="postHeader">
           Чем мы занимаемся?
         </p>
-        <p>
+        <p id="textAboutKelvan">
           Компания KelvanGroup работает в сфере установки и монтажа телекоммуникационного оборудования на высоте уже 5 лет.
  Наша компания имеет стабильную репутацию и сотрудничает с ведущими лидерами рынка США.<br><br>
 
@@ -134,9 +134,9 @@
        Кого мы ищем?
      </p>
    </div>
-  <div class="cards ">
+  <div class="cards">
     <div class="row d-flex justify-content-around">
-      <div class="col-4">
+      <div class="col-md-4 col-12">
         <div class="card border-light">
           <div class="card-header">
             <h5 class="card-title mt-2 text-center">Новичок</h5>
@@ -162,14 +162,14 @@
             Знание английского будет плюсом
           </div>
           <div class="card-body cardPartButton text-center">
-            <a href="#" class="def-button main-screen-button item-button" data-toggle="modal" data-target="#exampleModal">
+            <a href="#" class="def-button main-screen-button item-button thisIsForMeButton" data-toggle="modal" data-target="#exampleModal">
               Это про меня
             </a>
           </div>
         </div>
 
       </div>
-      <div class="col-4">
+      <div class="col-md-4 col-12">
         <div class="card border-light">
           <div class="card-header">
             <h5 class="card-title mt-2 text-center">Мастер</h5>
@@ -195,13 +195,13 @@
             Наличие TTT1 будет плюсом
           </div>
           <div class="card-body cardPartButton text-center">
-            <a href="#" class="def-button main-screen-button item-button" data-toggle="modal" data-target="#exampleModal">
+            <a href="#" class="def-button main-screen-button item-button thisIsForMeButton" data-toggle="modal" data-target="#exampleModal">
               Это про меня
             </a>
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-md-4 col-12">
         <div class="card border-light">
           <div class="card-header">
             <h5 class="card-title mt-2 text-center">Профессионал</h5>
@@ -227,7 +227,7 @@
             Знание английского будет плюсом
           </div>
           <div class="card-body cardPartButton text-center">
-            <a href="#" class="def-button main-screen-button item-button" data-toggle="modal" data-target="#exampleModal">
+            <a href="#" class="def-button main-screen-button item-button thisIsForMeButton" data-toggle="modal" data-target="#exampleModal">
               Это про меня
             </a>
           </div>
@@ -243,14 +243,14 @@
     <p class="postHeader text-center">Мы перезвоним Вам, чтобы уточнить детали</p>
     <form id="commonBeOurWorker">
                <div class="row d-flex justify-content-around">
-                 <div class="col-4">
+                 <div class="col-md-4 col-12 formcommonBeOurWorkerItem">
                     <input name="Name" type="text" class="form-control" id="name" placeholder="Ваше имя" required>
                   </div>
-                  <div class="col-4">
+                  <div class="col-md-4 col-12 formcommonBeOurWorkerItem">
                     <input name="Phone" type="tel" class="form-control" id="email" placeholder="Ваш телефон" required>
                   </div>
-                  <div class="col-3">
-                    <input type="submit" class="form-control"value="Отправить">
+                  <div class="col-md-4 col-12 formcommonBeOurWorkerItem">
+                    <input type="submit" class="form-control" value="Отправить" id="submitInput">
                   </div>
               </div>
   </form>
@@ -260,14 +260,14 @@
   <div id="review">
     <div class="container">
     <div class="row">
-      <div class="col-6 leftReview">
+      <div class="col-md-6 col-12 leftReview">
         <h4 class="reviewHeader">
         Отзывы
         </h4>
         <p class="postHeader">Что о нас говорят?</p>
       </div>
 
-      <div class="col">
+      <div class="col-md-6 col-12">
 
       </div>
                 <div class="container my-4">
@@ -377,19 +377,19 @@
   <div id="QA">
     <div class="container">
     <div class="row">
-      <div class="col ">
+      <div class="col-md-6 col-12 ">
         <h4 class="reviewHeader">
         Вопрос - ответ
         </h4>
         <p class="postHeader">Часто спрашивают...</p>
         <div class="wrapper">
           <div class="row">
-            <p>За что платит компания?</p>
+            <p class="expandText">За что платит компания?</p>
           <button data-toggle="collapse" data-target="#collapse-projects" aria-expanded="false" aria-controls="collapse-projects" class="collapseButton">
             <i class="fa fa-chevron-down" aria-hidden="true"></i>
           </button>
           </div>
-          <div class="collapse" id="collapse-projects">
+          <div class="collapse expandText" id="collapse-projects">
           <p>Компания полностью покрывает командировочные расходы (проживание, транспорт (авиабилеты/авто), суточные</p>
         </div>
         <hr align="center" width="100%" size="2" class="fullLine"/>
@@ -397,12 +397,12 @@
 
         <div class="wrapper">
           <div class="row">
-            <p>Проводит ли компания обучение?</p>
+            <p class="expandText">Проводит ли компания обучение?</p>
           <button data-toggle="collapse" data-target="#collapse-two" aria-expanded="false" aria-controls="collapse-two" class="collapseButton">
             <i class="fa fa-chevron-down" aria-hidden="true"></i>
           </button>
           </div>
-          <div class="collapse" id="collapse-two">
+          <div class="collapse expandText" id="collapse-two">
           Новых сотрудников мы обучаем с нуля, а также иногда проводятся тренинги для получения сертификации, необходимой для дальнейшей работы.
         </div>
         <hr align="center" width="100%" size="2" class="fullLine"/>
@@ -410,12 +410,12 @@
 
         <div class="wrapper">
           <div class="row">
-            <p>Сколько раз в месяц производятся выплаты?</p>
+            <p class="expandText">Сколько раз в месяц производятся выплаты?</p>
           <button data-toggle="collapse" data-target="#collapse-three" aria-expanded="false" aria-controls="collapse-three" class="collapseButton">
             <i class="fa fa-chevron-down" aria-hidden="true"></i>
           </button>
           </div>
-          <div class="collapse" id="collapse-three">
+          <div class="collapse expandText" id="collapse-three">
           Выплаты производятся за каждый выполненый обьект, тоесть количество выплат запивисит от количества сделаных обьектов.
         </div>
         <hr align="center" width="100%" size="2" class="fullLine"/>
@@ -423,12 +423,12 @@
 
         <div class="wrapper">
           <div class="row">
-            <p>Какой язык общения в коллективе?</p>
+            <p class="expandText">Какой язык общения в коллективе?</p>
           <button data-toggle="collapse" data-target="#collapse-four" aria-expanded="false" aria-controls="collapse-four" class="collapseButton">
             <i class="fa fa-chevron-down" aria-hidden="true"></i>
           </button>
           </div>
-          <div class="collapse" id="collapse-four">
+          <div class="collapse expandText" id="collapse-four">
           Коллектив русскоязычный.
         </div>
         <hr align="center" width="100%" size="2" class="fullLine"/>
@@ -436,12 +436,12 @@
 
         <div class="wrapper">
           <div class="row">
-            <p>Что я должен знать, чтобы работать у вас?</p>
+            <p class="expandText">Что я должен знать, чтобы работать у вас?</p>
           <button data-toggle="collapse" data-target="#collapse-five" aria-expanded="false" aria-controls="collapse-five" class="collapseButton">
             <i class="fa fa-chevron-down" aria-hidden="true"></i>
           </button>
           </div>
-          <div class="collapse" id="collapse-five">
+          <div class="collapse expandText" id="collapse-five">
           Умение работать с инструментом будем плюсом. Но если нет то мы вас всему научим, главное желание развиваться и зарабатывать.
         </div>
         <hr align="center" width="100%" size="2" class="fullLine"/>
@@ -449,7 +449,7 @@
 
 
       </div>
-      <div class="col rightQA">
+      <div class="col-md-6 col-12 rightQA">
         <h4 class="reviewHeader">
         Задай свой вопрос здесь
         </h4>
@@ -467,7 +467,7 @@
             <label for="formGroupExampleInput3">Содержание вопроса</label>
             <input required type="text" name="Question" class="form-control" id="formGroupExampleInput3" >
           </div>
-          <button href="#" class="def-button main-screen-button item-button" style="width:100%" type="submit">
+          <button href="#" class="def-button main-screen-button item-button question-button" style="width:100%" type="submit">
             Отправить вопрос
           </button>
       </form>
@@ -484,12 +484,11 @@
         <img src="Images/logo.svg" width="127.27px" height="86px" alt="">
       </a>
       <ul class="navbar-nav mx-auto order-0 mt-4">
-          <li class="nav-item active">
-            <img src="Images/copyright.svg" alt="">
+          <li class="nav-item active d-flex justify-content-center">
+            <img src="Images/copyright.svg" class="mr-2 copyrightImage">
+            <p class="copyrightText" style="color:white">Все права защищены</p>
           </li>
-          <li class="nav-item">
-            <p style="color:white">Все права защищены</p>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link p-0" href="#mainSection">
               <img src="Images/arrowUp.svg" alt="">
@@ -501,11 +500,11 @@
             </a>
           </li>
       </ul>
-      <div class="mr-auto ml-2">
+      <div class="mr-auto ml-2 phoneAndButton">
         <a class="navbar-brand phone" href="#" >
           <img src="Images/Phone.svg" width="16px" height="16px" alt="">  1 - 267 - 401 - 098
         </a>
-        <a href="#" class="def-button main-screen-button item-button" data-toggle="modal" data-target="#exampleModal">
+        <a href="#" class="def-button main-screen-button item-button footer-button" data-toggle="modal" data-target="#exampleModal">
           Заказать звонок
         </a>
       </div>
