@@ -1,9 +1,4 @@
-var playButton = document.getElementById("play_button");
-var video;
-var myText = document.getElementById("preVideoText");;
-window.onload = function() {
-	video = document.getElementById("videoPlayer");
-};
+
 let scriptURL = 'https://script.google.com/macros/s/AKfycbyR49mXTZzEEqmmwRviRk_eDKMDq1-Z1vk5cpFcT42pVxfsJBGmBxMqx3E0_rHD_oIsMQ/exec';
 let form = document.getElementById("PizdaJigurda");
 let questionnaire = document.getElementById("Questionnaire");
@@ -56,27 +51,3 @@ $(document).ready(function () {
                         .addClass("fa-chevron-down");
                 });
         });
-
-
-
-playButton.addEventListener("click", function() {
-  if (video.paused == true) {
-    // Play the video
-    video.play();
-    playButton.style.top = "70%";
-    playButton.style.left = "44%";
-    playButton.style.backgroundImage = "url(\"Images/pause.png\")";
-    playButton.style.height = "50px";
-    playButton.style.width = "50px";
-		myText.style.visibility = "hidden";
-  } else {
-    // Pause the video
-    video.pause();
-    playButton.style.top = "40%";
-    playButton.style.backgroundImage = "url(\"Images/Play_button.svg\")";
-    playButton.style.height = "100px";
-    playButton.style.width = "100px";
-    playButton.style.left = "40%";
-
-  }
-});

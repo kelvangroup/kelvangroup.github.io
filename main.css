@@ -109,20 +109,7 @@ input{
   width: 540px;
   height: 410px;
 }
-#play_button{
-  position: absolute;
-  top: 40%;
-  left: 40%;
-  height: 100px;
-  width: 100px;
-  z-index: 900;
-  background-repeat: no-repeat;
-  background: url("Images/Play_button.svg");
-  background-size: contain;
-  padding: 0;
-  border: none;
-  outline: none;
-}
+
 #preVideoText{
   position: absolute;
   top: 60%;
