@@ -97,8 +97,8 @@ hr{
 .social{
   margin-right: 16em;
 }
-.advantages-item{
-
+input{
+  border-radius: 0px !important;
 }
 .advantages-item-img{
   margin: 0 auto;
@@ -214,7 +214,10 @@ hr{
   height: 60px;
   border-radius: 0px;
 }
-
+.card-center-content{
+  margin-top: 1em;
+  padding-left: 1em;
+}
 
 #review{
   background: url("Images/towerQA.svg") no-repeat center, linear-gradient(90deg, #E2E2E2 50%, #FFFFFF 50%);
@@ -222,7 +225,12 @@ hr{
 }
 #QA{
   background: url("Images/towerQA.svg") no-repeat center, linear-gradient(90deg, #FFFFFF  50%, #E2E2E2 50%);
-
+}
+.expandQuestions{
+  background: white;
+}
+.rightColumnReviews{
+  background: white;
 }
 .reviewHeader{
   font-weight: 700;
@@ -419,12 +427,14 @@ p{
 .expandText{
   font-size: 12px;
 }
+#textAboutKelvan{
+  text-align: left !important;
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-device-width: 768px) {
+@media only screen and (min-width: 600px) and (max-device-width: 840px) {
 .navbar{
-  color: red;
     display: flex;
     flex-direction: column;
     justify-content: space-between !important;
@@ -457,11 +467,15 @@ p{
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 840px) and (max-device-width: 1080px) {
   #videoPlayer{
       z-index: 09;
       width: 100%;
       margin: 0 auto;
+  }
+  .advantages-item{
+    padding-left: 1px;
+    padding-right: 1px;
   }
 }
 
