@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+.carousel{
+  min-height: 450px;
+}
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -111,6 +114,7 @@ input{
   z-index: 09;
   width: 540px;
   height: 410px;
+  visibility: hidden;
 }
 
 #preVideoText{
@@ -344,6 +348,7 @@ input{
     z-index: 09;
     width: 100%;
     margin: 0 auto;
+    visibility: hidden;
 }
 #preVideoText{
   top: 50%;
@@ -462,6 +467,7 @@ p{
       z-index: 09;
       width: 100%;
       margin: 0 auto;
+      visibility: hidden;
   }
   .advantages-item{
     padding-left: 1px;
