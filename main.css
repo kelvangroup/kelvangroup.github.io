@@ -1,0 +1,482 @@
+html {
+  scroll-behavior: smooth;
+}
+.carousel{
+  min-height: 450px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#mainSection {
+  background: url("Images/first_screen_tower.svg") no-repeat right top, linear-gradient(135deg, #15192E 75%, #EA970A 25%);
+  color: white;
+}
+.nav-item{
+  margin-left: 1em;
+}
+#firstScreen{
+  left: 0px;
+  top: 0px;
+}
+.nav-link{
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+.nav-link:hover{
+  color: #EA0A0A;
+}
+#firstScreen{
+
+}
+.phone{
+  font-size: 15px;
+  line-height: 18px;
+  margin-right: auto;
+}
+h1{
+  margin-top: 2em;
+  text-align: left;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 56.35px;
+}
+.secheader{
+  margin-top: 1em;
+  text-align: left;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+.def-button{
+    background-color: #EA0A0A;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+    border: none;
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 240px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.def-button:hover{
+  text-decoration: none;
+  background-color: #d40808;
+  color: white;
+}
+.def-button:active{
+  background-color: #EA0A0A;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+.main-screen-button{
+  margin-top: 2em;
+}
+.thisIsForMeButton{
+  width: 100%;
+}
+hr{
+  margin-top: 8em;
+  border: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #EA970A  73%, #C1C1C1 27%);
+}
+.item-mini-advantages{
+  margin-left: 4em;
+}
+.mini-advantages{
+}
+.col{
+  padding: 0px;
+}
+#advantages{
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.social{
+  margin-right: 16em;
+}
+input{
+  border-radius: 0px !important;
+}
+.advantages-item-img{
+  margin: 0 auto;
+  align: center;
+}
+#videoPlayer{
+  z-index: 09;
+  width: 540px;
+  height: 410px;
+  visibility: hidden;
+}
+
+#preVideoText{
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 18px;
+  color: white;
+}
+.postHeader{
+  color: #EA970A;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 18px;
+}
+.OnasHeader{
+  font-weight: 700;
+  font-size: 34px;
+}
+#aboutUs{
+  margin-bottom: 2em;
+}
+#aboutYou{
+  margin-bottom: 2em;
+}
+.card-title{
+  font-weight: 700;
+  font-size: 22px;
+  align: center;
+  color: white;
+}
+.card-subtitle{
+  font-weight: bold;
+  font-size: 18px;
+  align: center;
+  color: #EA970A;
+
+}
+.priceText{
+  font-weight: 700;
+  font-size: 44px;
+  align: center;
+  color: #EA970A;
+}
+.card-header{
+  background: #15192E;
+}
+.card-body{
+  font-weight: normal;
+  font-size: 15px;
+  border-color: black;
+}
+.card{
+  box-shadow: 0px 8px 9px -3px rgba(0,0,0,0.36);
+}
+.item-button{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.cardPartButton{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#cta{
+  background: linear-gradient(55deg, #15192E 75%, #EA970A 25%);
+  color: white;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.ctaHeader{
+  font-weight: 400;
+  font-size: 34px;
+}
+.gform{
+  margin-top: 3em;
+}
+#submitInput{
+  background: red;
+  color: white;
+  border-radius: 0px;
+  border: none;
+  height: 60px;
+}
+#email{
+  height: 60px;
+  border-radius: 0px;
+}
+#name{
+  height: 60px;
+  border-radius: 0px;
+}
+.card-center-content{
+  margin-top: 1em;
+  padding-left: 1em;
+}
+
+#review{
+  background: url("Images/towerQA.svg") no-repeat center, linear-gradient(90deg, #E2E2E2 50%, #FFFFFF 50%);
+
+}
+#QA{
+  background: url("Images/towerQA.svg") no-repeat center, linear-gradient(90deg, #FFFFFF  50%, #E2E2E2 50%);
+}
+.expandQuestions{
+  background: white;
+}
+.rightColumnReviews{
+  background: white;
+}
+.reviewHeader{
+  font-weight: 700;
+  font-size: 34px;
+  margin-top: 2em;
+}
+.leftReview{}
+.carousel .carousel-indicators li {
+  background-color: #fff;
+  background-color: rgba(70, 70, 70, 0.25);
+}
+
+.carousel .carousel-indicators .active {
+  background-color: #EA970A;
+}
+.carousel-indicators{
+  bottom: -40px;
+}
+.fullLine{
+    margin-top: 0;
+    border: 0;
+    height: 2px;
+    background: #EA970A;
+}
+.urQuestHed{
+  margin-left: 1em;
+}
+.rightQA{
+  padding-bottom: 2em;
+}
+
+.collapseButton:focus { outline: none; }
+.collapseButton:active{
+  border: none;
+  outline: none;
+}
+.collapseButton{
+  border: none;
+  text-align:center;
+  vertical-align:middle;
+  height: 16px;
+  outline: none;
+}
+.wrapper{
+  margin-left: 1em;
+}
+#footer{
+    background: linear-gradient(135deg, #15192E 50%, #EA970A 50%);
+}
+.text-modal-from{
+  color: rgba(61, 61, 61, 0.3);
+
+}
+.modal-thanks-body{
+  height: 300px;
+}
+#formGroupExampleInput3{
+  height: 100px;
+}
+.footer-button{
+  background: none;
+  border: 2px solid #d40808;;
+  margin-left: 1em;
+}
+
+.copyrightText{
+  margin-bottom: 0;
+  margin-left: 2em;
+  margin-right: 2em;
+  white-space:nowrap;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+#header .navbar ul {
+  display: none;
+}
+
+.phone{
+  margin-right: 0;
+  margin-top: 1em;
+}
+#firstScreen h1{
+  color:#EA970A;
+  margin-top: 1em;
+}
+.navbar{
+  display: flex;
+  flex-direction: column;
+}
+.secheader{
+  background:  #EA970A;
+  padding: 3px;
+  text-align: center !important;
+}
+.main-screen-button{
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.social{
+  display: none !important;
+}
+#firstScreen hr{
+  margin-top: 1em;
+}
+
+#mainSection{
+  background: url("Images/first_screen_tower.svg") no-repeat, linear-gradient(135deg, #15192E 75%, #EA970A 25%);
+}
+.mini-advantages{
+  display: none !important;
+}
+#advantages{
+  margin-bottom: 0px;
+}
+#advantages div{
+  flex-direction: column;
+}
+#videoPlayer{
+    z-index: 09;
+    width: 100%;
+    margin: 0 auto;
+    visibility: hidden;
+}
+#preVideoText{
+  top: 50%;
+  left: 10%;
+}
+.OnasHeader{
+  text-align: center;
+}
+.postHeader{
+  text-align: center;
+}
+p{
+  text-align: center;
+  padding: 1em;
+}
+#aboutUs{
+  margin-bottom: 0px;
+}
+.postHeader{
+  padding-top: 0;
+}
+.formcommonBeOurWorkerItem{
+  padding: 1em;
+}
+#cta{
+  background: linear-gradient(135deg, #15192E 75%, #EA970A 25%);
+}
+.reviewHeader{
+  text-align: center;
+}
+.leftReview .postHeader{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#review{
+  background: white;
+}
+
+#QA{
+  background: white;
+}
+.question-button{
+  width: 90% !important;
+  margin: 0 auto;
+  text-align:center;
+  display: flex;
+  justify-content: center;
+}
+.card{
+  margin-bottom: 1em;
+}
+#QA .row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#footer ul li:nth-child(2){
+  text-align: center;
+  order: 4;
+}
+#footer ul li:nth-child(3){
+  text-align: center;
+}
+.phone{
+  display: flex;
+  justify-content: center;
+}
+
+.phoneAndButton{
+  margin: auto !important;
+}
+.expandText{
+  font-size: 12px;
+}
+#textAboutKelvan{
+  text-align: left !important;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-device-width: 840px) {
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+  }
+  .expandText{
+    font-size: 14px;
+  }
+  #header .phone{
+    align-content: center;
+    margin: auto;
+  }
+  .social{
+    display: none !important;
+  }
+  #header .a{
+    text-shadow: 2px 6px 4px #000000;
+  }
+  h1{
+    text-shadow: 2px 6px 4px #000000;
+  }
+  .secheader{
+    text-shadow: 2px 6px 4px #000000;
+  }
+  .mini-advantages{
+    text-shadow: 2px 2px 4px #000000;
+  }
+  #preVideoText{
+    left: 27%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 840px) and (max-device-width: 1080px) {
+  #videoPlayer{
+      z-index: 09;
+      width: 100%;
+      margin: 0 auto;
+      visibility: hidden;
+  }
+  .advantages-item{
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}

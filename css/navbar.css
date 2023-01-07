@@ -1,0 +1,19 @@
+#mainNav .nav-item {
+  font-size: 18px;
+}
+
+#mainNav .logo-white {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+#mainNav .logo-black {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+#mainNav.navbar-scrolled .logo-white {
+  opacity: 0;
+}
+#mainNav.navbar-scrolled .logo-black {
+  opacity: 1;
+}
